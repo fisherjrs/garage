@@ -1,4 +1,6 @@
 garage
 ======
 
-garage
+red
+green
+blue
