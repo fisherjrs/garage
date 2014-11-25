@@ -31,3 +31,11 @@ println "the square of ${a1} is :: ${square(a1)}"
 println "${[2, 3, 4, 5]}"
 println "${[2, 3, 4, 5].collect()}" //no transform, just returns a copy of the collection
 println "${[2, 3, 4, 5].collect(square)}"
+
+
+//A closure can have excess arguments. They get added to an array. The first argument is bound to format. Any other arguments are part of Object[]
+def c = {
+	format, Object[] args ->
+	println (format + " :: " + arg0.toString())}
+c ("one", "two", "three");
+c ("1","3");
